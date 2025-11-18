@@ -66,8 +66,8 @@ namespace lgsWebJitsuKyori01.Controllers
             string strKyoriMeter = "";
             int intMeter = 0;
 
-            TRKSVR2NETX1.ServerComputerName = @"MR8400\lgstrksvr";
-            TRKSVR2NETX1.KeisanJouken = 272;
+            TRKSVR2NETX1.ServerComputerName = @"MR8400\lgstrksvr";  //【1】距離計算DBのSQLServerインスタンス
+            TRKSVR2NETX1.KeisanJouken = 272;                        //【2】デフォルトの計算条件値
 
             Boolean blnCond = TRKSVR2NETX1.lgsServerConnect();
             if (blnCond)

@@ -26,19 +26,19 @@ namespace lgsCallMyWebApiHttpClient01
             //public string KyoriName { get; set; }
             public int KyoriMeter { get; set; }
         }
-        public string lgsPAk01ACon { get; set; }
+       
 
         public Form1()
         {
             InitializeComponent();
 
-
-            this.textBoxWebApiUrl.Text = "https://localhost:5000/api/K/";
+            this.textBoxSQL接続先.Text = @"MR8400\lgstrksvr";              //  【1】距離計算DB　SQLSDerverインスタンス
+            this.textBoxWebApiUrl.Text = "https://localhost:5000/api/K/";   // 【2】WebAPIのURL
 
             this.textBox起点.Text = "13102";
             this.textBox終点.Text = "27127";
 
-            this.textBoxSQL接続先.Text = @"MR8400\lgstrksvr"; // 【1】距離計算DB　SQLSDerverインスタンス
+            
         }
 
         private async void httpClient呼び出しToolStripMenuItem_Click(object sender, EventArgs e)
@@ -48,7 +48,7 @@ namespace lgsCallMyWebApiHttpClient01
             string F = this.textBox起点.Text;
             string T = this.textBox終点.Text;
 
-            //this.lgsClientYobiDashi(F, T);
+          
 
             string WepApiUrl = this.textBoxWebApiUrl.Text;
             string Url = WepApiUrl + "?f=" + F + "&t=" + T;
@@ -57,21 +57,10 @@ namespace lgsCallMyWebApiHttpClient01
 
             // 結果
             this.textBox距離Meter.Text = kyori.KyoriMeter.ToString();
-            //this.textBox最短距離Km.Text = kyoriKm.SaitanKyoriKm.ToString();
-            //this.textBoxError.Text = kyoriKm.Error;
+           
 
         }
 
-        private async void lgsClientYobiDashi(string sF, string sT)
-        {
-            string WepApiUrl = this.textBoxWebApiUrl.Text;
-            string Url = WepApiUrl + "?f=" + sF + "&t=" + sT;
-            // WebApi呼び出し
-            Kyori kyori = await WebApiKyoriMeter(Url);
-
-            // 結果
-            this.textBox距離Meter.Text = kyori.KyoriMeter.ToString();
-        }
 
         private async Task<Kyori> WebApiKyoriMeter(string Url)
         {
@@ -84,7 +73,7 @@ namespace lgsCallMyWebApiHttpClient01
             strProxyServer = "";
 
 
-            // 統一する 20250207 20190605
+           
             ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls11 | SecurityProtocolType.Tls12;
 
             HttpClientHandler httpClientHandler = new HttpClientHandler();
@@ -107,7 +96,7 @@ namespace lgsCallMyWebApiHttpClient01
             HttpClient client = new HttpClient(handler: httpClientHandler, disposeHandler: true);
 
 
-            //KyoriKm kyoriKm = null;
+           
             Kyori kyori = null;
 
             HttpResponseMessage response = await client.GetAsync(Url);

@@ -1,11 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36401.2 d17.14
+VisualStudioVersion = 17.14.36401.2
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lgsWebJitsuKyori01", "lgsWebJitsuKyori01\lgsWebJitsuKyori01.csproj", "{6B3E0768-174F-4C41-AA28-65180CC483F3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lgsCallMyWebApiHttpClient01", "lgsCallMyWebApiHttpClient01\lgsCallMyWebApiHttpClient01\lgsCallMyWebApiHttpClient01.csproj", "{A6C5B116-6FF1-6AA8-BC3C-81FE66A4249B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lgsCall2TenDll01", "lgsCall2TenDll01\lgsCall2TenDll01.csproj", "{D2394379-81CE-48C9-93AA-C44AC21ADF76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lgsCallKeiyuTenDll01", "lgsCallKeiyuTenDll01\lgsCallKeiyuTenDll01.csproj", "{EC88F0A0-4F67-47C8-A4FD-C216CFD9625F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lgsCallSocket01", "lgsCallSocket01\lgsCallSocket01.csproj", "{795E73B5-BF94-48E1-AFB1-AD6A5C67344B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +27,18 @@ Global
 		{A6C5B116-6FF1-6AA8-BC3C-81FE66A4249B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6C5B116-6FF1-6AA8-BC3C-81FE66A4249B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6C5B116-6FF1-6AA8-BC3C-81FE66A4249B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2394379-81CE-48C9-93AA-C44AC21ADF76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2394379-81CE-48C9-93AA-C44AC21ADF76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2394379-81CE-48C9-93AA-C44AC21ADF76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2394379-81CE-48C9-93AA-C44AC21ADF76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC88F0A0-4F67-47C8-A4FD-C216CFD9625F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC88F0A0-4F67-47C8-A4FD-C216CFD9625F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC88F0A0-4F67-47C8-A4FD-C216CFD9625F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC88F0A0-4F67-47C8-A4FD-C216CFD9625F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{795E73B5-BF94-48E1-AFB1-AD6A5C67344B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{795E73B5-BF94-48E1-AFB1-AD6A5C67344B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{795E73B5-BF94-48E1-AFB1-AD6A5C67344B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{795E73B5-BF94-48E1-AFB1-AD6A5C67344B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
